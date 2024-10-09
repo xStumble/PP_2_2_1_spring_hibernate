@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class Car {
@@ -20,7 +19,9 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    public Car() {}
+    public Car() {
+
+    }
 
     public Car(String model, int series) {
         this.model = model;
